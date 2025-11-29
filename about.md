@@ -4,4 +4,6 @@ title: /about
 permalink: /about/
 ---
 
-Coming soon...
+👋 I'm Jett.
+
+Currently, I'm solving problems with data @ [Palantir](https://palantir.com).
