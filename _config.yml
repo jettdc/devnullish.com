@@ -1,0 +1,31 @@
+title: devnulllish.com
+email: jettcrowson@gmail.com
+description: ">/dev/nullish"
+baseurl: ""
+url: "https://devnullish.com"
+github_username: jettdc
+
+remote_theme: b2a3e8/jekyll-theme-console
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+header_pages:
+  - index.md
+  - about.md
+
+footer: "Jett Crowson | <a href='https://www.linkedin.com/in/jettcrowson' target='_blank' rel='noopener'>LinkedIn</a> | <a href='mailto:jettcrowson@gmail.com'>Email me</a>"
+
+style: dark
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
