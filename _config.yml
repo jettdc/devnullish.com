@@ -1,4 +1,4 @@
-title: devnulllish.com
+title: ">/dev/nullish"
 email: jettcrowson@gmail.com
 description: ">/dev/nullish"
 baseurl: ""
@@ -11,7 +11,7 @@ plugins:
   - jekyll-seo-tag
 
 header_pages:
-  - index.md
+  - indexhome.md
   - about.md
 
 footer: "Jett Crowson | <a href='https://www.linkedin.com/in/jettcrowson' target='_blank' rel='noopener'>LinkedIn</a> | <a href='mailto:jettcrowson@gmail.com'>Email me</a>"
