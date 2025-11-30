@@ -1,36 +1,27 @@
-# Jekyll build output
-_site/
-.sass-cache/
-.jekyll-cache/
+stash/
 
-# OS / Editor files
+# Hugo build output
+/public/
+/resources/_gen/
+/resources/.gen/
+
+# Hugo cache
+/.hugo_build.lock
+
+# OS files
 .DS_Store
 Thumbs.db
+
+# Editor files
 *.swp
+*.swo
 *~
+.vscode/
+.idea/
 
-# Ruby / Bundler
-.bundle/
-vendor/bundle/
-Gemfile.lock
-
-# Logs
-*.log
-
-# Node / Yarn / NPM if you use them
+# Node modules (if using npm/yarn for assets)
 node_modules/
-yarn-error.log
-package-lock.json
 
-# Backup files
-*.bak
+# Temporary files
 *.tmp
-*.orig
-
-# Vim / Emacs temp files
-.*.swp
-*~
-
-private
-
-drafts
+*.log

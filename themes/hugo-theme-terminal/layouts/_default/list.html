@@ -1,0 +1,19 @@
+{{ define "main" }}
+<h1>{{ .Title }}</h1>
+<br/>
+{{ .Content }}
+
+<div class="posts-list">
+    <ul>
+    {{ range sort .Pages "Date" "desc" }}
+        {{ if not .Params.private }}
+            <li>
+                [{{ .Date | time.Format ":date_medium" }}] <a href="{{ .Permalink }}">{{ .Title }}</a>
+                <br><span style="font-size: 0.9em; color: #888;">{{ .RelPermalink }}</span>
+            </li>
+        {{ end }}
+    {{ end }}
+    </ul>
+</div>
+
+{{ end }}

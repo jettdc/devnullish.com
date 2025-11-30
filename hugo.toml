@@ -1,0 +1,17 @@
+baseURL = 'https://devnullish.com/'
+languageCode = 'en-us'
+title = '/dev/nullish'
+theme = "hugo-theme-terminal"
+
+[params]
+  titleCutting = true
+  animateStyle = "animated zoomIn fast" 
+  footer = "Jett Crowson | <a href='https://www.linkedin.com/in/jettcrowson' target='_blank' rel='noopener'>LinkedIn</a> | <a href='mailto:jettcrowson@gmail.com'>Email me</a>"
+
+  [[params.navlinks]]
+  name = "about/"
+  url = "about/"
+
+  [[params.navlinks]]
+  name = "posts/"
+  url = "posts/"

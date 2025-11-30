@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<h1>Latest</h1>
+
+<div class="posts-list">
+    <ul>
+    {{ $posts := where .Site.RegularPages "Section" "posts" }}
+    {{ $posts := where $posts ".Params.private" "!=" true }}
+    {{ range first 3 (sort $posts "Date" "desc")}}
+        <li>
+            [{{ .Date | time.Format ":date_medium" }}] <a href="{{ .Permalink }}">{{ .Title }}</a>
+            <br><span style="font-size: 0.9em; color: #888;">{{ .RelPermalink }}</span>
+        </li>
+    {{ end }}
+    </ul>
+</div>
+
+<h1>All</h1>
+
+<pre class="terminal-output">
+{{- $sectionsCount := len .Site.Sections -}}
+{{- $pagesCount := len (where .Site.RegularPages "Section" "") -}}
+{{- $totalCount := add $sectionsCount $pagesCount -}}
+
+{{- /* Render top-level pages first */ -}}
+{{- range $i, $page := (where .Site.RegularPages "Section" "") -}}
+    {{- $branch := "├─" -}}
+    {{- if and (eq (add $i 1) $pagesCount) (eq $sectionsCount 0) -}}
+    {{- $branch = "└─" -}}
+    {{- end -}}
+    {{- printf "%s <a href=\"%s\">%s</a>\n" $branch ($page.Permalink) $page.Title | safeHTML -}}{{- end -}}
+{{- /* Then render sections */ -}}
+{{- range $i, $section := .Site.Sections -}}
+    {{- $isLast := eq (add $i 1) $sectionsCount -}}
+    {{- partial "tree_section.html" (dict "section" $section "prefix" "" "isLast" $isLast) -}}
+{{- end -}}
+</pre>
+
+
+{{ end }}

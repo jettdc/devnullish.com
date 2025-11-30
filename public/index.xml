@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>/dev/nullish</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on /dev/nullish</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>about</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;👋 I&amp;rsquo;m Jett.&lt;/p&gt;&#xA;&lt;p&gt;Currently, I&amp;rsquo;m solving problems with data @ &lt;a href=&#34;https://palantir.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Palantir&lt;/a&gt; &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hello, World!</title>
+      <link>http://localhost:1313/posts/meta/hello-world/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/meta/hello-world/</guid>
+      <description>&lt;p&gt;The world certainly does not need another tech blog. Nor do I necessarily have many particularly insightful or revolutionary thoughts. But the beauty of the internet is that everyone has a chance to scream into the void, regardless of the quality of their work or veracity of their claims.&lt;/p&gt;&#xA;&lt;p&gt;With that being said, I&amp;rsquo;ve spent countless hours reading others&amp;rsquo; thoughts—obscure tutorials, random notes on niche problems, strangers&amp;rsquo; opinions on the internet. I&amp;rsquo;ve always appreciated this vast ocean of information in the technology and software spaces, and I feel compelled to contribute to it, in whatever inconsequential way that might be.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
