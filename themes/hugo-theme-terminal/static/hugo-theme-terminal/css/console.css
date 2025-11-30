@@ -31,7 +31,7 @@
 }
 
 :root {
-    --global-font-size: 16px;
+    --global-font-size: 14px;
     --global-font-color: #444;
     --mono-font-stack: Roboto Mono, Menlo, Monaco, Lucida Console,
         Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono,
@@ -140,8 +140,8 @@ h1 {
     border-color: #333;
     font-weight: 400;
     font-family: var(--font-stack);
-    padding: 6px 12px;
-    font-size: 18px;
+    padding: 6px 14px;
+    font-size: 14px;
     line-height: 1.55;
     border-radius: 0;
     margin-left: 0;
