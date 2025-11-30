@@ -1,7 +1,7 @@
 ---
 layout: home
-title: /
-permalink: /
+title: /home
+permalink: /home
 ---
 
 &gt;/dev/nullish
