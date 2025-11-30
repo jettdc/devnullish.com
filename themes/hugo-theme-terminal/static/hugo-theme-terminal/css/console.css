@@ -228,8 +228,6 @@ figure {
 }
 
 .posts-list {
-    position: relative;
-    padding-left: 130px;
     top: 0;
 }
 
@@ -310,4 +308,12 @@ figure {
         margin-top: 50px;
         padding-top: 5px;
     }
+}
+
+.terminal-output {
+    padding: 1em;
+    margin: 0;
+    line-height: 1.2;
+    white-space: pre;
+    font-size: 14px;
 }

@@ -1,0 +1,41 @@
+{{- /* Recursive tree partial */ -}}
+{{- $section := .section -}}
+{{- $prefix := .prefix -}}
+{{- $isLast := .isLast -}}
+
+{{- /* Determine branch character */ -}}
+{{- $branch := "├─" -}}
+{{- if $isLast -}}
+  {{- $branch = "└─" -}}
+{{- end -}}
+
+{{- /* Print this section */ -}}
+{{- printf "%s%s %s\n" $prefix $branch $section.Title | safeHTML -}}
+
+{{- /* Prepare prefix for children */ -}}
+{{- $childPrefix := "" -}}
+{{- if $isLast -}}
+  {{- $childPrefix = printf "%s   " $prefix -}}
+{{- else -}}
+  {{- $childPrefix = printf "%s│  " $prefix -}}
+{{- end -}}
+
+{{- /* Render pages (skip _index.md) */ -}}
+{{- $pages := where $section.Pages "File.BaseFileName" "ne" "_index" -}}
+{{- $pagesCount := len $pages -}}
+{{- $sectionsCount := len $section.Sections -}}
+{{- $totalChildren := add $pagesCount $sectionsCount -}}
+
+{{- range $i, $page := $pages -}}
+  {{- $pageBranch := "├─" -}}
+  {{- if and (eq (add $i 1) $pagesCount) (eq $sectionsCount 0) -}}
+    {{- $pageBranch = "└─" -}}
+  {{- end -}}
+  {{- printf "%s%s <a href=\"%s\">%s</a>\n" $childPrefix $pageBranch ($page.Permalink) $page.Title | safeHTML -}}
+{{- end -}}
+
+{{- /* Render subsections */ -}}
+{{- range $i, $sub := $section.Sections -}}
+  {{- $isLastSection := eq (add $i 1) $sectionsCount -}}
+  {{- partial "tree_section.html" (dict "section" $sub "prefix" $childPrefix "isLast" $isLastSection) -}}
+{{- end -}}

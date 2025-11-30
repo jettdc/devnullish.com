@@ -1,2 +1,27 @@
-themes
 stash/
+
+# Hugo build output
+/public/
+/resources/_gen/
+/resources/.gen/
+
+# Hugo cache
+/.hugo_build.lock
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Node modules (if using npm/yarn for assets)
+node_modules/
+
+# Temporary files
+*.tmp
+*.log

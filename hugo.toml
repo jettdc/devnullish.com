@@ -1,16 +1,11 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://devnullish.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = '/dev/nullish'
 theme = "hugo-theme-terminal"
 
 [params]
-  # Cutting off the page title to two chars for mobile (console-demo -> co)
   titleCutting = true
-
-  # Set the animation style -- https://animate.style/
-  # To disable animations, please remove or comment animationStyle parameter
   animateStyle = "animated zoomIn fast" 
-
   footer = "Jett Crowson | <a href='https://www.linkedin.com/in/jettcrowson' target='_blank' rel='noopener'>LinkedIn</a> | <a href='mailto:jettcrowson@gmail.com'>Email me</a>"
 
   [[params.navlinks]]
@@ -20,7 +15,3 @@ theme = "hugo-theme-terminal"
   [[params.navlinks]]
   name = "posts/"
   url = "posts/"
-  
-  [[params.navlinks]]
-  name = "photos/"
-  url = "photos/"
